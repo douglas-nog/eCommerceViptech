@@ -1,12 +1,17 @@
 import { Input, Select } from "antd";
 import { FloatLabel } from "../FloatLabel";
 import "./style.css";
-import { Botao } from "../Botao";
+import { Botao } from "../Button";
 import { IconContext } from 'react-icons';
+import iconCamera from "../../images/iconCamera.svg"
 
 const { Option } = Select;
 
-export const Formulario = (props:any) => {
+interface interfaceProps {
+    titulo: string
+}
+
+export const Formulario = (props: interfaceProps) => {
 //     const [nome, setNome] = useState("Digite o nome do produto");
 //     const [marca, setMarca] = useState("Digite a marca do produto");
 //     const [valor, setValor] = useState("000,00");
@@ -15,7 +20,14 @@ export const Formulario = (props:any) => {
 
   return (
     <form>
-        <h3 style={{ margin: "2rem", marginLeft: "1px" }}> Adicionar Produto </h3>
+        <h3 
+            style={{ 
+                margin: "2rem", 
+                marginLeft: "1px",
+                fontWeight:"bold"
+            }}> 
+                {props.titulo} 
+            </h3>
 
         <FloatLabel label="Nome do Produto" name="nome" >
             <Input id="campo"
@@ -76,8 +88,9 @@ export const Formulario = (props:any) => {
        
         <Botao 
             titulo="Adicionar Produto"/>
-
+    <script src="script.js"></script>
     </form>
+    
   );
 };
 

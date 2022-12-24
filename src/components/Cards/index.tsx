@@ -59,16 +59,16 @@ export const Cards = () => {
                     >
                         <Link to='/Carrinho' className='nav-link'>
                             <img className='img'
-                                src={cart}
-                                
+                                src={cart}   
+                            />
+                        </Link>
+                        
+                        <Link to='/Editar' className='nav-link'>
+                            <img className='img'
+                                src={edit}
                             />
                         </Link>
 
-                        <img className='img'
-                            src={edit}
-                            
-                        />
-                                
                         <img className='img'
                             src={lixeira}
                             

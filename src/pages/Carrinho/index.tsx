@@ -1,8 +1,9 @@
 import { Header } from "../../components/Header"
-import { CardCart } from "../../components/CardCarrinho"
+import { CardCart } from "../../components/CartCard"
 import { Container } from "reactstrap"
 import { Navegacao } from "../../components/Navegacao"
 import { useState } from "react";
+import { CardCheckout } from "../../components/CardCheckout";
 
 
 export const Carrinho = () => {
@@ -19,9 +20,10 @@ export const Carrinho = () => {
 
     return(
         <>
-            
             <Header />
+
             <Navegacao />
+
             <Container>
                 <div className="row">
                     <div 
@@ -32,6 +34,7 @@ export const Carrinho = () => {
                             style={{ fontWeight: 'bold' }}
                         >
                             Carrinho</h2>
+                        
                     </div>
                 </div>
             </Container>
@@ -44,11 +47,9 @@ export const Carrinho = () => {
                         >
                         <CardCart Plus={Plus} Reduce={Reduce} qty={qty}/>   
                         </div>
+                    
                     </div>
-                
             </Container>
-
-            
         </>
     )
 }

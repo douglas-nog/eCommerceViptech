@@ -1,5 +1,6 @@
 import { Formulario } from "../../components/Formulario"
 import { Header } from "../../components/Header"
+import { Navegacao } from "../../components/Navegacao"
 
 export const AddProduto = () => {
 
@@ -7,7 +8,11 @@ export const AddProduto = () => {
         <>
             <Header />
 
-            <Formulario />
+            <Navegacao />
+
+            <Formulario 
+                titulo="Adicionar Produto"
+            />
         </>
     )
 

@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap"
-import { Botao } from "../../components/Botao"
+import { Botao } from "../../components/Button"
 import { Cards } from "../../components/Cards"
 import { Header } from "../../components/Header"
 import { Navegacao } from "../../components/Navegacao"
@@ -14,16 +14,25 @@ export const Home = () => {
             <Navegacao />
 
             <Container fluid>
-                <div className="row" style={{ marginTop:'4rem', marginBottom:'3rem'}}>
+                <div className="row" 
+                    style={{
+                        marginTop:'4rem', 
+                        marginBottom:'3rem'
+                    }}>
 
                     <div className="col-md-1"></div>
 
-                    <h3 className="col-md-8" style={{ fontWeight:"normal"}}>
+                    <h3 className="col-md-8" 
+                        style={{ 
+                            fontWeight:"bold"
+                        }}>
                         Produtos
                     </h3>
                     <div className="col-md-2"
-                        style={{ display:"flex", justifyContent: "center"}}
-                        >
+                        style={{ 
+                            display:"flex", 
+                            justifyContent: "center"
+                        }}>
 
                         <Link to='/addproduto' className='nav-link'>
                             <Botao

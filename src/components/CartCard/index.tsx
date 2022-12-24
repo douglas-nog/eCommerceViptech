@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Container } from "reactstrap"
+import { Container } from "reactstrap";
 import camera from "../../images/camera.png";
-import iconReduce from "../../images/iconReduce.svg"
-import iconPlus from "../../images/iconPlus.svg"
+import iconReduce from "../../images/iconReduce.svg";
+import iconPlus from "../../images/iconPlus.svg";
+import './style.css'
 
 export const CardCart =(props: any) => {
     return(
@@ -45,15 +46,15 @@ export const CardCart =(props: any) => {
                 </div>
             </Container >
 
-            <Container fluid>
-                <div  className='row'
+            <Container>
+                <div id="secondPart" className='row'
                         style={{ 
                             marginTop:"30px", 
                             color:"#353535", 
                             borderTop:"1px solid #b2b2b2", 
                             paddingTop:"2rem", 
                             paddingBottom:"1.5rem",
-                            alignItems:"center"
+                            
                         }}>
 
                         <div
@@ -81,7 +82,8 @@ export const CardCart =(props: any) => {
                             <button 
                                 style={{ 
                                     border:"none", 
-                                    backgroundColor:"#ffff"
+                                    backgroundColor:"#ffff",
+                                    paddingBottom:"20px"
                                     }}
                                 onClick={props.Reduce}>
                                 <img src={iconReduce} />
@@ -93,6 +95,7 @@ export const CardCart =(props: any) => {
                                     width:"2.5rem",
                                     height:"1.9rem",
                                     display:"flex",
+                                    alignContent:"center",
                                     justifyContent:"center",
                                     fontSize:"1.1rem"
                                 }}
@@ -103,24 +106,23 @@ export const CardCart =(props: any) => {
                             <button 
                                 style={{ 
                                     border:"none", 
-                                    backgroundColor:"#ffff"
+                                    backgroundColor:"#ffff",
+                                    paddingBottom:"19px"
                                     }}
                                 onClick={props.Plus}>
                                 <img src={iconPlus} />
                             </button>
                         </div>
                         
-                        <div
-                            className='col-md-2'
-                        >
-                        
-                        </div>
+                    
 
                         <div 
                             style={{
-                                fontWeight:"bold"
+                                fontWeight:"bold",
+                                textAlign:"right",
+                                display:"flex"
                             }}
-                            className='col-md-1'
+                            className='col-md-4'
                         >
                             <p>R$300,00</p> 
                         </div>
