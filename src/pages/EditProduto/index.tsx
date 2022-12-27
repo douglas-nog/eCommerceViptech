@@ -1,5 +1,5 @@
-import { Header } from "antd/es/layout/layout"
-import { Formulario } from "../../components/Formulario"
+import { Header } from "../../components/Header"
+import { Formulario } from "../../components/Form"
 import { Navegacao } from "../../components/Navegacao"
 
 export const EditProdutos = () => {
@@ -7,7 +7,9 @@ export const EditProdutos = () => {
         <>
             <Header />
 
-            <Navegacao />
+            <Navegacao 
+                title="Editar Produto"
+            />
 
             <Formulario 
                 titulo="Editar Produto"

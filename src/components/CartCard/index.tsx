@@ -12,8 +12,8 @@ export const CardCart =(props: any) => {
             <Container fluid>
                 <div  className='row'
                         style={{ 
-                            marginTop:"30px", 
-                            color:"#353535"
+                                marginTop:"30px", 
+                                color:"#353535"
                             }}>
 
                             <div 
@@ -107,7 +107,7 @@ export const CardCart =(props: any) => {
                                 style={{ 
                                     border:"none", 
                                     backgroundColor:"#ffff",
-                                    paddingBottom:"19px"
+                                    paddingBottom:"20px"
                                     }}
                                 onClick={props.Plus}>
                                 <img src={iconPlus} />

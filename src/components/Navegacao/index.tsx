@@ -1,16 +1,31 @@
-import BreadcrumbSeparator from 'antd/es/breadcrumb/BreadcrumbSeparator';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import './style.css'
+import { Link } from 'react-router-dom';
 
-export const Navegacao = () => {
+interface interfaceBC {
+  title: string;
+}
+
+export const Navegacao = (props: interfaceBC) => {
   return (
-    <Breadcrumb 
+    <Breadcrumb  aria-label="breadcrumb" 
       style={{
         padding:"25px",
         fontSize:"0.8em",
-        marginLeft:"75px"
+        marginLeft:"103px"
       }}
     >
-    <Breadcrumb.Item href="http://localhost:3000/">Home</Breadcrumb.Item>
+    <Breadcrumb.Item>
+      <Link 
+        to="/">
+          Home
+      </Link>
+    </Breadcrumb.Item>
+
+    <Breadcrumb.Item active >
+      {props.title}
+    </Breadcrumb.Item>
+
 
   </Breadcrumb>
   );

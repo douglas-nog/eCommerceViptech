@@ -1,18 +1,17 @@
-import { Container } from "react-bootstrap"
-import { Botao } from "../../components/Button"
-import { Cards } from "../../components/Cards"
-import { Header } from "../../components/Header"
-import { Navegacao } from "../../components/Navegacao"
+import { Container } from "react-bootstrap";
+import { ButtonPlus } from "../../components/ButtonPlus";
+import { Cards } from "../../components/Cards";
+import { Header } from "../../components/Header";
+import { Navegacao } from "../../components/Navegacao";
 import { Link } from 'react-router-dom';
+import plusButton from "../../images/plusButton.svg";
 
 export const Home = () => {
     return(
         <> 
             <Header 
                 />  
-
-            <Navegacao />
-
+                
             <Container fluid>
                 <div className="row" 
                     style={{
@@ -35,8 +34,8 @@ export const Home = () => {
                         }}>
 
                         <Link to='/addproduto' className='nav-link'>
-                            <Botao
-                                
+                            <ButtonPlus
+                                icon= { plusButton }
                                 titulo="Adicionar Produto" 
                                 
                             />

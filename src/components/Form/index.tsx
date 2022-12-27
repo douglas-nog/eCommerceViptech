@@ -1,9 +1,8 @@
 import { Input, Select } from "antd";
 import { FloatLabel } from "../FloatLabel";
 import "./style.css";
-import { Botao } from "../Button";
+import { ButtonPlus } from "../ButtonPlus";
 import { IconContext } from 'react-icons';
-import iconCamera from "../../images/iconCamera.svg"
 
 const { Option } = Select;
 
@@ -17,6 +16,7 @@ export const Formulario = (props: interfaceProps) => {
 //     const [valor, setValor] = useState("000,00");
 //     const [selectValue, setSelectValue] = useState("Selecione a cor");
 //     const [data, setData] = useState();
+
 
   return (
     <form>
@@ -86,8 +86,10 @@ export const Formulario = (props: interfaceProps) => {
             </FloatLabel>
         </ IconContext.Provider>
        
-        <Botao 
-            titulo="Adicionar Produto"/>
+        <ButtonPlus
+            titulo="Adicionar Produto"
+            icon=""
+        />
     <script src="script.js"></script>
     </form>
     

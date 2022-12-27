@@ -5,6 +5,7 @@ import edit from "../../images/edit.svg";
 import camera from "../../images/camera.png";
 import { Link } from 'react-router-dom';
 
+
 // interface interfaceProps {
 //     img: string,
 //     descricao: string,
@@ -57,7 +58,7 @@ export const Cards = () => {
                         className='col-md-2'
                         style={{ verticalAlign:"center", display:"flex", alignItems:"center", justifyContent:"space-between"}}
                     >
-                        <Link to='/Carrinho' className='nav-link'>
+                        <Link to='/Cart' className='nav-link'>
                             <img className='img'
                                 src={cart}   
                             />
@@ -75,7 +76,6 @@ export const Cards = () => {
                         />
                     </div>
                 </div>               
-            
         </Container>
     )
 }

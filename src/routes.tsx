@@ -4,7 +4,7 @@ import {
     Route
 } from "react-router-dom";
 import { AddProduto } from './pages/AddProduto';
-import { Carrinho } from './pages/Carrinho';
+import { Cart } from './pages/Cart';
 import { Home } from './pages/Home';
 import { EditProdutos } from './pages/EditProduto';
 
@@ -22,8 +22,8 @@ export const Rotas = () => {
                     element={<AddProduto />} />
                 
                 <Route
-                    path='/Carrinho'
-                    element={<Carrinho />} />
+                    path='/Cart'
+                    element={<Cart />} />
 
                 <Route
                     path='/Editar'
